@@ -19,7 +19,7 @@
   color: var(--color-black);
 }
 .button_a {
-  font-size: 1.1rem;
+  font-size: clamp(0.5rem, 0.1304rem + 1.8478vi, 1.3625rem);
   text-transform: uppercase;
 }
 .pink {

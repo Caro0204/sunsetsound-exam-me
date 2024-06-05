@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../schedule/Schedule.module.css";
+import Image from "next/image";
 
 function OneSchedule({ band }) {
   return (
@@ -8,7 +9,8 @@ function OneSchedule({ band }) {
         <h3 className={styles.break_text}>–– break ––</h3>
       ) : (
         <Link className={styles.color_container} href={`/bands/${band.slug}`}>
-          <p className={styles.band_name}>{band.act}</p>
+          <Image className={styles.bandimg} src={band.logo && !band.logo.startsWith("https") ? `https://broken-tinted-wombat.glitch.me/logos/${band.logo}` : band.logo} alt="cover of the band" width={160} height={160} />
+          <span className={styles.band_name}>{band.act}</span>
         </Link>
       )}
     </div>

@@ -126,17 +126,17 @@ function Schedule() {
           <h3 className={styles.areatitle}>JOTUNHEIM</h3>
           {insertTimes()}
           <article className={styles.oneschedulegrid}>
-            <div>
+            <div className={styles.bandbox}>
               {midgard.map((act) => (
                 <OneSchedule key={act.logo} band={act} />
               ))}
             </div>
-            <div>
+            <div className={styles.bandbox}>
               {vanaheim.map((act) => (
                 <OneSchedule key={act.logo} band={act} />
               ))}
             </div>
-            <div>
+            <div className={styles.bandbox}>
               {jotunheim.map((act) => (
                 <OneSchedule key={act.logo} band={act} />
               ))}

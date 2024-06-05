@@ -6,8 +6,12 @@
   display: grid;
   place-content: center;
   gap: 4rem;
+  place-items: center;
 }
 
+.indexWrap > * {
+  grid-area: 1/1;
+}
 .indexTitles {
   display: flex;
   word-break: break-word;
@@ -25,6 +29,7 @@
   padding: 0 1rem;
   max-width: 400px;
   gap: 2.5rem 1rem;
+  margin-top: 150px;
 }
 
 .indexTagline {
@@ -39,12 +44,32 @@
 
 .indexHeaderTitle {
   font-size: clamp(3.125rem, 1.4358rem + 5.4054vi, 5.625rem);
+  margin-top: -180px;
+  text-align: center;
 }
 .indexSubTitle {
   font-size: clamp(1.25rem, 1.0326rem + 1.087vi, 1.875rem);
   line-height: normal;
+  direction: rtl;
 }
 
-.address {
-  margin-top: -15px;
+.hp_img {
+  width: 370%;
+  margin-top: -156px;
+}
+
+/****** Mobile *******/
+@media (width < 600px) {
+  .hp_img {
+    width: 400%;
+    margin-top: -80px;
+  }
+  .indexHeaderTitle {
+    margin-top: -110px;
+  }
+  .indexButWrap {
+    max-width: 200px;
+    margin-top: 125px;
+    font-size: 1rem;
+  }
 }

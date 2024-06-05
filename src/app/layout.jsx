@@ -15,6 +15,7 @@ export default async function RootLayout({ children }) {
         <head>
           <meta name="robots" content="noindex"></meta>
           <link rel="stylesheet" href="https://use.typekit.net/svd4gfu.css" />
+          <link rel="icon" type="image/svg+xml" href="favicon-s_sound.svg" />
         </head>
         <body>
           <Header></Header>

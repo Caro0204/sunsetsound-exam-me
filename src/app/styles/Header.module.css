@@ -86,7 +86,7 @@
     text-decoration: none;
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: var(--color-black);
+    color: var(--color-blue);
     padding: 2px;
     font-family: var(--header-font);
   }
@@ -139,7 +139,7 @@
   .headermenu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--color-black);
+    color: var(--color-blue);
   }
   .nav img {
     inline-size: none;
@@ -189,8 +189,13 @@
   .headermenu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--color-black);
+    color: var(--color-blue);
   }
+  .headermenu a:hover {
+    color: var(--color-blue);
+    text-decoration: 3px underline dotted var(--color-blue);
+  }
+
   .nav img {
     inline-size: none;
     padding: 0;

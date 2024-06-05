@@ -7,6 +7,7 @@ import TicketCardBack from "../components/TicketCardBack";
 import { useMediaQuery } from "react-responsive";
 import ScrollToTop from "react-scroll-to-top";
 import MainButton from "../components/Button";
+import Image from "next/image";
 
 function Tickets() {
   const [isFlippedRegular, setIsFlippedRegular] = useState(false);

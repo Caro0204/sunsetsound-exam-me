@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import styles from "./Program.module.css";
 import ScrollToTop from "react-scroll-to-top";
+import Image from "next/image";
 
 export default async function page() {
   const url = "https://broken-tinted-wombat.glitch.me/bands";
