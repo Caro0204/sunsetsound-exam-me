@@ -294,32 +294,41 @@
     max-width: 300px;
     min-height: 100px;
     overflow: hidden;
+    position: relative;
   }
 
   .img_textstyle span:hover {
     cursor: pointer;
   }
-  .img_textstyle > * {
-    grid-area: 1 / 1;
-  }
+
   .img_textstyle span {
-    color: var(--color-black);
-    font-size: 1rem;
+    color: var(--color-white);
+    font-size: 1.1rem;
     z-index: 1;
-    text-align: center;
+    align-self: flex-end;
     font-family: var(--paragraph-font);
-    padding: 5px;
+    padding: 7px;
     transform: none;
+    position: absolute;
+    text-transform: uppercase;
+    justify-self: center;
+    transition: 0.35s ease-out;
+    word-break: break-word;
+    font-weight: bold;
+    margin: 3px;
   }
   .img_textstyle .color_container {
     /* background-color: var(--color-button-hover); */
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-black18);
+    transition: 0.35s ease-out;
   }
-  .img_textstyle .color_container:hover {
+  .color_container:hover {
     /* background-color: var(--color-yellow); */
     transform: scale(1.1);
+    transition: 0.35s ease-in-out;
   }
 
   .color_container a {
@@ -332,7 +341,7 @@
   }
   .areatitle {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 
   .days {
@@ -359,6 +368,7 @@
     min-width: 274.5px;
     max-width: 275px;
     min-height: 99.5px;
+    opacity: 0.6;
   }
   .bandbox {
     flex-grow: 1;
