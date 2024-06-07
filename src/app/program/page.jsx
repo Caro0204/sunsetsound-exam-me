@@ -6,8 +6,8 @@ import ScrollToTop from "react-scroll-to-top";
 import Image from "next/image";
 
 export default async function page() {
-  const url = "https://broken-tinted-wombat.glitch.me/bands";
-  // const url = "http://localhost:8080/bands";
+  // const url = "https://broken-tinted-wombat.glitch.me/bands";
+  const url = "http://localhost:8080/bands";
   const res = await fetch(url);
   const bandData = await res.json();
 
