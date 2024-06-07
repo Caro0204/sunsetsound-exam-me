@@ -129,3 +129,7 @@
   font-family: var(--header-font);
   text-transform: uppercase;
 }
+.space {
+  margin-left: 12px;
+  color: #5e7af5;
+}

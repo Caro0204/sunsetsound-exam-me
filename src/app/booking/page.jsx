@@ -56,22 +56,22 @@ function Booking() {
             {/* onClick => setPage sætter siden til det korrekte side ud fra index  */}
             {/*disabled sørger for at brødkrumme kun er brugbar tilbage og ikke frem */}
             <button onClick={() => setPage(0)} disabled={page === 0} className={`button ${page === 0 ? styles.active : ""}`}>
-              Tickets
+              Tickets <span className={styles.space}>/</span>
             </button>
           </li>
           <li>
             <button onClick={() => setPage(1)} disabled={page <= 1} className={`button ${page === 1 ? styles.active : ""}`}>
-              Ticket Info
+              Ticket Info <span className={styles.space}>/</span>
             </button>
           </li>
           <li>
             <button onClick={() => setPage(2)} disabled={page <= 2} className={`button ${page === 2 ? styles.active : ""}`}>
-              Camping
+              Camping <span className={styles.space}>/</span>
             </button>
           </li>
           <li>
             <button onClick={() => setPage(3)} disabled={page <= 3} className={`button ${page === 3 ? styles.active : ""}`}>
-              Billing
+              Billing <span className={styles.space}>/</span>
             </button>
           </li>
           <li>
