@@ -20,23 +20,26 @@ export default async function page() {
       <h1 className={`globalHeader`}>Lineup</h1>
       <div className={styles.programwrapper}>
         <div className={styles.topBandWrapper}>
-          {topBand.map((data) => (
+          {topBand.map((data, svg) => (
             <Link className={styles.topBandStyle} key={data.name} href={`/bands/${data.slug}`}>
               {data.name}
+              <div className={styles.starbox}>{svg < topBand.length - 1 && <Image className={styles.star} src="Star.svg" alt="star" width={50} height={50}></Image>}</div>
             </Link>
           ))}
         </div>
         <div className={styles.midBandWrapper}>
-          {midBand.map((data) => (
+          {midBand.map((data, svg) => (
             <Link className={styles.midBandStyle} key={data.name} href={`/bands/${data.slug}`}>
               {data.name}
+              <div className={styles.starbox}>{svg < midBand.length - 1 && <Image className={styles.star} src="Star-fill.svg" alt="star" width={50} height={50}></Image>}</div>
             </Link>
           ))}
         </div>
         <div className={styles.botBandWrapper}>
-          {botBand.map((data) => (
+          {botBand.map((data, svg) => (
             <Link className={styles.botBandStyle} key={data.name} href={`/bands/${data.slug}`}>
               {data.name}
+              <div className={styles.starbox}>{svg < botBand.length - 1 && <Image className={styles.starsmall} src="Star.svg" alt="star" width={50} height={50}></Image>}</div>
             </Link>
           ))}
         </div>
