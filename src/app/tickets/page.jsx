@@ -75,6 +75,10 @@ function Tickets() {
           </div>
         </div>
       </div>
+      <div>
+        <h2 className={styles.mapTitle}>Map of the festival</h2>
+        <Image className={styles.map} src="map_ufill.svg" alt="map of festival" width={160} height={160}></Image>
+      </div>
       <ScrollToTop width="38" color="#5e7af5" className={`importantstyle`} smooth />
     </>
   );
