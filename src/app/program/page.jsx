@@ -15,6 +15,8 @@ export default async function page() {
   const midBand = bandData.slice(14, 27);
   const botBand = bandData.slice(27, 69);
 
+  console.log(bandData);
+
   return (
     <>
       <h1 className={`globalHeader`}>Lineup</h1>

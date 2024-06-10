@@ -64,7 +64,7 @@ function Billingform({ setPage }) {
             </div>
           </div>
           <div className={styles.inputBox}>
-            <label htmlFor="country">County</label>
+            <label htmlFor="country">Country</label>
             <input className={styles.inputField} name="country" id="country" placeholder="Denmark" required />
           </div>
           <div className={styles.paymentSection}>
