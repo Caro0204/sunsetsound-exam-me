@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import styles from "./Tickets.module.css";
 import ReactCardFlip from "react-card-flip";
 import TicketCardFront from "../components/TicketCardFront";

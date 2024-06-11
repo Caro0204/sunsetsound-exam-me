@@ -18,3 +18,28 @@
   display: grid;
   margin-top: 1.5rem;
 }
+
+/***** map image ******/
+
+.mapoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+}
+.map {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.maptext {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
