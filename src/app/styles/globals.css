@@ -31,7 +31,14 @@
 }
 
 body {
-  background: radial-gradient(circle at center top, #ffe401, #aff76d, #9fdede, #b6bcf7, #b6b8f7);
+  background: radial-gradient(
+    circle at center top,
+    #ffe401,
+    #aff76d,
+    #9fdede,
+    #b6bcf7,
+    #b6b8f7
+  );
   animation: moveGradient 15s ease-in-out infinite;
   background-size: 200% 200%;
   min-height: 100vh;

@@ -7,10 +7,13 @@
 }
 
 .infoIcon {
-  color: black;
-  border: 2px solid #3498db;
-  border-radius: 80%;
-  padding: 0 0.5rem 0 0.5rem;
+  border: 1px solid #5e7af5;
+  border-radius: 50%;
+  width: 2em; /* eller en anden fast bredde */
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tooltipText {
