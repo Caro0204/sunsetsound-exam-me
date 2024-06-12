@@ -89,7 +89,7 @@ export default async function page({ params }) {
             <p className={styles.dataWrapper}>{data.venue}</p>
           </div>
         </div>
-        <Image className={styles.bandImage} src={data.logo && !data.logo.startsWith("https") ? `http://localhost:8080/logos/${data.logo}` : data.logo} alt="cover of the band" width={160} height={160} />
+        <Image className={styles.bandImage} src={data.logo && !data.logo.startsWith("https") ? `https://broken-tinted-wombat.glitch.me/logos/${data.logo}` : data.logo} alt="cover of the band" width={160} height={160} />
       </section>
 
       <section className={styles.randomBandsSection}>
@@ -99,7 +99,7 @@ export default async function page({ params }) {
             <div key={band.slug}>
               <Link href={`/bands/${band.slug}`} className={styles.bandLink}>
                 <div>
-                  <Image className={styles.randomBandImage} src={band.logo && !band.logo.startsWith("https") ? `http://localhost:8080/logos/${band.logo}` : band.logo} alt={`cover of ${band.name}`} width={160} height={160} />
+                  <Image className={styles.randomBandImage} src={band.logo && !band.logo.startsWith("https") ? `https://broken-tinted-wombat.glitch.me/logos/${data.logo}` : band.logo} alt={`cover of ${band.name}`} width={160} height={160} />
                 </div>
                 <h3 className={styles.randomBandsSubH}>{band.name}</h3>
                 <p className={styles.dataWrapper}>{band.genre}</p>
