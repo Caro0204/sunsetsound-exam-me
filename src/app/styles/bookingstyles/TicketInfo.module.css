@@ -21,3 +21,11 @@
 .ticketNumber {
   font-size: 0.8rem;
 }
+.inputTel {
+  max-width: 8.5ch;
+}
+.hint {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8em;
+  color: grey;
+}

@@ -112,6 +112,7 @@ function Ticketsbox({
     <>
       {/* TICKETBOX */}
       <p className={styles.bookingSubtitle}>Ticket(s)</p>
+      <p className={styles.hint}>Max 5 tickets per order</p>
       <div className={styles.ticketLine}>
         <p>Regular Ticket</p>
         <div className={styles.plusMinusCollected}>
@@ -141,6 +142,7 @@ function Ticketsbox({
         <br />
         {/* GEARBOX */}
         <p className={styles.bookingSubtitle}>Tent(s)</p>
+        <p className={styles.hint}>Choose the desired amount of camping-gear</p>
         <div className={styles.ticketLine}>
           <p>2-person tent</p>
           <div className={styles.plusMinusCollected}>
@@ -175,10 +177,12 @@ function Ticketsbox({
       </div>
       <div className={styles.ticketLine}>
         <div className={styles.greenCamping}>
-          <label>Greencamping</label>
-          <ToolTip ToolTipText="This allows you to set up your camp in our Greencamping-area with focus on the enviroment"></ToolTip>
+          <label for="checkbox">Greencamping</label>
+          <span> </span>
+          <ToolTip ToolTipText="for 250 DKK you can help a great cause and donate to the enviroment"></ToolTip>
         </div>
         <input
+          id="checkbox"
           className={styles.checkBox}
           type="checkbox"
           checked={gearChoice.greenCamping}

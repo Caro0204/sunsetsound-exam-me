@@ -32,3 +32,9 @@
   margin-top: 2rem;
   margin-right: 1.75rem;
 }
+
+.hint {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8em;
+  color: grey;
+}

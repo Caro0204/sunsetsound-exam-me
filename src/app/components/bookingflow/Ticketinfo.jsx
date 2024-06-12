@@ -10,16 +10,55 @@ function TicketForm({ ticketNumber, ticketType }) {
         <div>
           <fieldset className={styles.infoBox}>
             <div className={styles.infoBox}>
-              <label>Full name:</label>
-              <input type="text" name="fullname" required className={styles.inputField} placeholder="Lars Larsen" pattern="[A-Za-zæøåÆØÅ]{2,}\s?)+" />
+              <label for="fullname">Full name:</label>
+              <p className={styles.hint}>
+                Write you full name including first, middle, and lastname
+              </p>
+              <input
+                id="fullname"
+                type="text"
+                name="fullname"
+                required
+                className={styles.inputField}
+                placeholder="Jane Doe"
+                pattern="[A-Za-zæøåÆØÅ]{2,}\s?)*"
+                autoCapitalize="on"
+                autoCorrect="off"
+              />
             </div>
             <div className={styles.infoBox}>
-              <label>Email:</label>
-              <input type="email" name="email" required className={styles.inputField} placeholder="lars@mail.com" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+              <label for="email">Email:</label>
+              <p className={styles.hint}>Email must contain @</p>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                className={styles.inputField}
+                placeholder="jane@mail.com"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                title="Invalid email address"
+                autoCapitalize="off"
+                autoCorrect="off"
+              />
             </div>
             <div className={styles.infoBox}>
-              <label>Phone-number:</label>
-              <input type="tel" name="phone" required className={styles.inputField} placeholder="2323 2323" pattern="[+0-9]{8,}" inputmode="numerical" />
+              <label for="phone">Phone-number:</label>
+              <p className={styles.hint}>
+                Phone number must be 8 characters end exclude country-code
+              </p>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                required
+                inputMode="numeric"
+                className={`${styles.inputField} ${styles.inputTel}`}
+                placeholder="1212 1212"
+                title="Invalid phone number"
+                pattern="^(?:\d{2}\s?\d{2}\s?\d{2}\s?\d{2}|\d{8})$"
+                maxLength={8}
+              />
             </div>
           </fieldset>
         </div>

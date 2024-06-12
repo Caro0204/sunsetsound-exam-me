@@ -141,8 +141,11 @@ function Booking() {
               )}
               {page === 1 && (
                 <div>
-                  <p>Ticket(s) Info</p>
-                  <ToolTip ToolTipText="Fill out the information of each ticketholder"></ToolTip>
+                  <p className={styles.bookingSubtitle}>Ticket(s) Info</p>
+                  <p className={styles.hint}>
+                    Fill out the information below for each ticketholder
+                  </p>
+                  <ToolTip ToolTipText="This information is only used to secure your tickets integrety"></ToolTip>
                   <div>
                     <GetTicketInfo
                       setPage={setPage}
