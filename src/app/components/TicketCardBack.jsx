@@ -12,6 +12,7 @@ function TicketCardBack({ name, moreinfo }) {
         <p className={styles.moreInfo}>{moreinfo}</p>
       </div>
       <div className={styles.indexButWrap}>
+        <MainButton href={"/tickets"} buttontext="Buy" color="primary" />
         <MainButton href={""} buttontext="Back" color="pink" />
       </div>
     </div>

@@ -58,12 +58,21 @@
   margin-top: -156px;
 }
 
+.hpm_img {
+  display: none;
+}
+
 /****** Mobile *******/
 @media (width < 600px) {
   .hp_img {
-    width: 400%;
-    margin-top: -80px;
+    display: none;
   }
+  .hpm_img {
+    display: block;
+    width: 210%;
+    margin-top: -90px;
+  }
+
   .indexHeaderTitle {
     margin-top: -110px;
   }
