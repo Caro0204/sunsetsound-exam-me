@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "../../styles/bookingstyles/AvailableSpots.module.css";
 import BookingButton from "./BookingButton";
+import Image from "next/image";
 
 export default function Availablespots({ data, ticketTotal, page, setPage }) {
   const [spots, setSpots] = useState(data);
@@ -17,6 +18,19 @@ export default function Availablespots({ data, ticketTotal, page, setPage }) {
   };
 
   const selectionMade = () => selectedArea !== null;
+
+  // image
+  const [showMap, setShowMap] = useState(false);
+
+  const handleMapClick = () => {
+    setShowMap(true);
+  };
+
+  const handleMapHideClick = () => {
+    setShowMap(false);
+  };
+
+  //
 
   return (
     <>
@@ -39,6 +53,17 @@ export default function Availablespots({ data, ticketTotal, page, setPage }) {
           )}
         </fieldset>
       </form>
+      <div>
+        {" "}
+        <p className={styles.maptext} onClick={handleMapClick}>
+          Click here to show map
+        </p>
+        {showMap && (
+          <div className={styles.mapoverlay} onClick={handleMapHideClick}>
+            <Image className={styles.map} src="map_ufill_5s.svg" alt="map of festival" width={160} height={160}></Image>
+          </div>
+        )}
+      </div>
       {page !== 4 && (
         <div>
           <BookingButton buttontext={"Continue"} color="blue" onClick={() => setPage((o) => o + 1)} disabled={!selectionMade()}></BookingButton>

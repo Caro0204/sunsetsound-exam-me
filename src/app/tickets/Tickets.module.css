@@ -106,3 +106,51 @@
   margin-top: 6rem;
   margin-bottom: 1.5rem;
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding-top: 250px;
+  padding-right: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  padding: 0;
+  width: 100%;
+}
+
+.content {
+  margin-right: 220px; /* Adjust according to the sidebar width */
+  padding: 20px;
+  width: 100%;
+}
+
+.section {
+  padding: 20px;
+}
+
+/****** Mobile *******/
+@media (width < 600px) {
+  .sidebar {
+    padding-right: 8px;
+  }
+  .map {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

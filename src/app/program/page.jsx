@@ -1,9 +1,8 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 import styles from "./Program.module.css";
-import ScrollToTop from "react-scroll-to-top";
 import Image from "next/image";
+import Scroll from "../components/Scroll";
 
 export default async function page() {
   // const url = "https://broken-tinted-wombat.glitch.me/bands";
@@ -43,7 +42,7 @@ export default async function page() {
             </Link>
           ))}
         </div>
-        <ScrollToTop width="38" color="#5e7af5" className={`importantstyle`} smooth />
+        <Scroll></Scroll>
       </div>
     </>
   );

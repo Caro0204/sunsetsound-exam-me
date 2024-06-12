@@ -25,6 +25,7 @@ function Booking() {
   }, []);
 
   const [page, setPage] = useState(0);
+  const [bookingId, setBookingId] = useState("");
 
   const [ticketChoice, setTicketChoice] = useState({
     regular: 0,
@@ -150,6 +151,7 @@ function Booking() {
                   </div>
                 </div>
               )}
+
               {page === 2 && (
                 <Availablespots
                   setPage={setPage}
@@ -159,6 +161,21 @@ function Booking() {
               )}
               {page === 3 && <Billingform setPage={setPage}></Billingform>}
               {page === 4 && <Ordercomplete />}
+
+              {page === 2 && (
+                <Availablespots
+                  setPage={setPage}
+                  data={data}
+                  ticketTotal={ticketTotal}
+                />
+              )}
+              {page === 3 && (
+                <Billingform
+                  setBookingId={setBookingId}
+                  setPage={setPage}
+                ></Billingform>
+              )}
+              {page === 4 && <Ordercomplete bookingId={bookingId} />}
             </div>
           </section>
           {/* Sørger for ikke at vise kurven på confirmed siden  */}
