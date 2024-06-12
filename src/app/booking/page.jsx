@@ -100,11 +100,6 @@ function Booking() {
                   </div>
                 </div>
               )}
-
-              {page === 2 && <Availablespots setPage={setPage} data={data} ticketTotal={ticketTotal} />}
-              {page === 3 && <Billingform setPage={setPage}></Billingform>}
-              {page === 4 && <Ordercomplete />}
-
               {page === 2 && <Availablespots setPage={setPage} data={data} ticketTotal={ticketTotal} />}
               {page === 3 && <Billingform setBookingId={setBookingId} setPage={setPage}></Billingform>}
               {page === 4 && <Ordercomplete bookingId={bookingId} />}
