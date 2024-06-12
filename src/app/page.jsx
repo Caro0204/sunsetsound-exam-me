@@ -8,6 +8,7 @@ export default async function Home() {
       <div className={styles.indexWrap}>
         {/* <div className={styles.indexTitles}> */}
         <Image className={styles.hp_img} src="bbg_ss_play_uf.svg" alt="background image" width={150} height={150}></Image>
+        <Image className={styles.hpm_img} src="bbg_ss_mobil.svg" alt="background image mobile" width={150} height={150}></Image>
         <h1 className={styles.indexHeaderTitle}>
           SUNSET <br /> SOUND
         </h1>
