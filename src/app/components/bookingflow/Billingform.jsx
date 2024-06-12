@@ -4,7 +4,7 @@ import styles from "../../styles/bookingstyles/Billingform.module.css";
 import { addBooking } from "../../../lib/data";
 import BookingButton from "./BookingButton";
 
-function Billingform({ setPage }) {
+function Billingform({ setPage, setBookingId }) {
   const checkForError = (e) => {
     if (e.target.name == "expodate") {
       if (e.target.value.toString().length === 2) e.target.value = e.target.value + "/";
@@ -26,6 +26,7 @@ function Billingform({ setPage }) {
     info.tele = formData.get("phone");
 
     info.userid = self.crypto.randomUUID();
+    setBookingId(info.userid);
 
     addBooking(info);
   }
