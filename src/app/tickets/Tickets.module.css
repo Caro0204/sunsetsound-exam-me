@@ -153,4 +153,10 @@
     width: 100%;
     margin: 0 auto;
   }
+  .content {
+    padding: 5px;
+  }
+  .section {
+    padding: 1px;
+  }
 }
