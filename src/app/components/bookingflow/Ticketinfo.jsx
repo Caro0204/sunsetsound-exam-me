@@ -12,7 +12,7 @@ function TicketForm({ ticketNumber, ticketType }) {
             <div className={styles.infoBox}>
               <label for="fullname">Full name:</label>
               <p className={styles.hint}>
-                Write your full name including first, middle, and lastname
+                Write you full name including first, middle, and lastname
               </p>
               <input
                 id="fullname"
@@ -54,7 +54,7 @@ function TicketForm({ ticketNumber, ticketType }) {
                 required
                 inputMode="numeric"
                 className={`${styles.inputField} ${styles.inputTel}`}
-                placeholder="1212 1212"
+                placeholder="20202020"
                 title="Invalid phone number"
                 pattern="^(?:\d{2}\s?\d{2}\s?\d{2}\s?\d{2}|\d{8})$"
                 maxLength={8}
