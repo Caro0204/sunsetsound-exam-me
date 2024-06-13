@@ -1,12 +1,10 @@
-.title {
-  font-size: 1.5rem;
-}
 .camping {
   padding: 10px 0 10px 0;
 }
 .camping_spot_title label {
-  font-size: 1.1rem;
-  font-family: var(--subtitle-font);
+  font-family: var(--paragraph-font);
+  font-size: medium;
+  font-weight: bold;
   color: var(--color-blue);
   text-transform: uppercase;
 }
@@ -17,6 +15,17 @@
 .btnWrapper {
   display: grid;
   margin-top: 1.5rem;
+}
+.bookingSubtitle {
+  font-family: var(--paragraph-font);
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hint {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8em;
+  color: grey;
 }
 
 /***** map image ******/
@@ -42,4 +51,7 @@
 .maptext {
   font-size: 0.8rem;
   cursor: pointer;
+}
+.maptext:hover {
+  color: var(--color-blue);
 }

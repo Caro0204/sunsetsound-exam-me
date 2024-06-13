@@ -48,3 +48,29 @@
 .ticketNumber {
   font-size: 0.8rem;
 }
+.bookingSubtitle {
+  font-family: var(--paragraph-font);
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hint {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8em;
+  color: grey;
+}
+.inputTel {
+  max-width: 8.5ch;
+}
+.inputZip {
+  max-width: 5ch;
+}
+.inputExp {
+  max-width: 6ch;
+}
+.inputCvc {
+  max-width: 4ch;
+}
+.inputCn {
+  max-width: 18ch;
+}

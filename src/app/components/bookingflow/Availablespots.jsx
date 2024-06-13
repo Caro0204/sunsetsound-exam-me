@@ -36,7 +36,8 @@ export default function Availablespots({ data, ticketTotal, page, setPage }) {
     <>
       <form>
         <fieldset>
-          <legend className={styles.title}>Choose your camping area</legend>
+          <legend className={styles.bookingSubtitle}>Camping area</legend>
+          <p className={styles.hint}>Choose your desired camping area</p>
           {spots.map(
             (spot, index) =>
               ticketTotal < spot.available && (
@@ -45,7 +46,14 @@ export default function Availablespots({ data, ticketTotal, page, setPage }) {
                     <label htmlFor={`campingArea${index}`}>{spot.area}</label>
                   </div>
                   <div>
-                    <input className={styles.radiobutton} type="radio" name="campingArea" id={`campingArea${index}`} value={spot.area} onChange={handleSelection} />
+                    <input
+                      className={styles.radiobutton}
+                      type="radio"
+                      name="campingArea"
+                      id={`campingArea${index}`}
+                      value={spot.area}
+                      onChange={handleSelection}
+                    />
                     <span>{spot.available} spots available</span>
                   </div>
                 </div>
@@ -60,13 +68,24 @@ export default function Availablespots({ data, ticketTotal, page, setPage }) {
         </p>
         {showMap && (
           <div className={styles.mapoverlay} onClick={handleMapHideClick}>
-            <Image className={styles.map} src="map_ufill_5s.svg" alt="map of festival" width={160} height={160}></Image>
+            <Image
+              className={styles.map}
+              src="map_ufill_5s.svg"
+              alt="map of festival"
+              width={160}
+              height={160}
+            ></Image>
           </div>
         )}
       </div>
       {page !== 4 && (
         <div>
-          <BookingButton buttontext={"Continue"} color="blue" onClick={() => setPage((o) => o + 1)} disabled={!selectionMade()}></BookingButton>
+          <BookingButton
+            buttontext={"Continue"}
+            color="blue"
+            onClick={() => setPage((o) => o + 1)}
+            disabled={!selectionMade()}
+          ></BookingButton>
         </div>
       )}
     </>

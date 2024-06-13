@@ -12,7 +12,7 @@ function TicketForm({ ticketNumber, ticketType }) {
             <div className={styles.infoBox}>
               <label for="fullname">Full name:</label>
               <p className={styles.hint}>
-                Write you full name including first, middle, and lastname
+                Write your full name including first, middle, and lastname
               </p>
               <input
                 id="fullname"
