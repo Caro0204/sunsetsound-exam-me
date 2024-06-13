@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/bookingstyles/Billingform.module.css";
 import { addBooking } from "../../../lib/data";
 import BookingButton from "./BookingButton";
+import CountrySelector from "./CountrySelector";
 
 function Billingform({ setPage, setBookingId }) {
   const checkForError = (e) => {
@@ -61,7 +62,7 @@ function Billingform({ setPage, setBookingId }) {
               required
             />
           </div>
-          {/* <div className={styles.smallerField}> */}
+
           <div className={styles.inputBox}>
             <label htmlFor="email">Email</label>
 
@@ -76,7 +77,7 @@ function Billingform({ setPage, setBookingId }) {
               autoCapitalize="off"
               autoCorrect="off"
             />
-            {/* </div> */}
+
             <div className={styles.inputBox}>
               <label htmlFor="phone">Phone</label>
               <p className={styles.hint}>
@@ -141,7 +142,7 @@ function Billingform({ setPage, setBookingId }) {
               required
             />
           </div>
-          <div className={styles.inputBox}>
+          {/* <div className={styles.inputBox}>
             <label htmlFor="country">County</label>
             <input
               className={styles.inputField}
@@ -150,7 +151,8 @@ function Billingform({ setPage, setBookingId }) {
               placeholder="Denmark"
               required
             />
-          </div>
+          </div> */}
+          <CountrySelector></CountrySelector>
           <div className={styles.paymentSection}>
             <legend className={styles.bookingSubtitle}>
               Credit Card Details
