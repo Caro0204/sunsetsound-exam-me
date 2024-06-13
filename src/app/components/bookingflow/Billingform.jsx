@@ -108,6 +108,7 @@ function Billingform({ setPage, setBookingId }) {
               type="text"
               placeholder="Streetname 1 st.tv"
               title="Invalid address"
+              autoCapitalize="on"
               required
             />
           </div>
@@ -135,6 +136,8 @@ function Billingform({ setPage, setBookingId }) {
               type="text"
               title="Invalid city"
               placeholder="Copenhagen"
+              autoCapitalize="on"
+              autoCorrect="on"
               required
             />
           </div>

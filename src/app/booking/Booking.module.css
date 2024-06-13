@@ -104,16 +104,22 @@
   color: #5e7af5;
 }
 .basketSubtitle {
-  font-family: var(--subtitle-font);
+  font-family: system-ui, sans-serif;
   text-transform: uppercase;
   margin-top: -2rem;
   margin-bottom: 1rem;
+}
+.basketSub2 {
+  font-family: var(--paragraph-font);
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .feeFixed {
   display: flex;
   flex-direction: row;
   font-size: 12px;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
 }
 .feeTickets {
   background: rgba(191, 202, 251, 0.5);
@@ -126,7 +132,7 @@
 .feeTotal {
   font-weight: bold;
   font-size: 1.8rem;
-  font-family: var(--header-font);
+  font-family: var(--paragraph-font);
   text-transform: uppercase;
 }
 .space {
