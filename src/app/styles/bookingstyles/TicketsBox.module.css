@@ -19,6 +19,13 @@
   align-items: center;
   justify-content: center;
 }
+
+.plusMinusCollected span {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+}
+
 .plusMinusCollected {
   display: flex;
   gap: 0.5rem;
