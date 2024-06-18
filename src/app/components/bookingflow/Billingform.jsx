@@ -44,7 +44,7 @@ function Billingform({ setPage, setBookingId }) {
           <div className={styles.inputBox}>
             <label htmlFor="email">Email</label>
 
-            <input className={styles.inputField} name="email" id="email" type="email" placeholder="jane@mail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" autoCapitalize="off" autoCorrect="off" />
+            <input className={styles.inputField} name="email" id="email" type="email" placeholder="jane@mail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" autoCapitalize="off" autoCorrect="off" required />
 
             <div className={styles.inputBox}>
               <label htmlFor="phone">Phone</label>
@@ -80,7 +80,7 @@ function Billingform({ setPage, setBookingId }) {
           <CountrySelector></CountrySelector>
           <div className={styles.paymentSection}>
             <legend className={styles.bookingSubtitle}>Credit Card Details</legend>
-            <p className={styles.hint}>Credit card details doesn't have to match the billing info</p>
+            <p className={styles.hint}>Credit card details doesnt have to match the billing info</p>
             <div className={styles.inputBox}>
               <label htmlFor="cardholdername">Cardholders Name</label>
               <input className={styles.inputField} name="cardholdername" id="cardholdername" type="text" placeholder="Jane Doe" pattern="[A-Za-zæøåÆØÅ]{2,}\s?)+" autoCapitalize="on" autoCorrect="off" title="Please fill out cardholders full name" required />
