@@ -1,5 +1,3 @@
-// src/components/CountrySelector.js
-
 import React, { useState } from "react";
 import countries from "../../assets/countries.json";
 import styles from "../../styles/bookingstyles/Billingform.module.css";
