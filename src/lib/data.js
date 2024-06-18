@@ -1,5 +1,5 @@
-const endPoint = "https://broken-tinted-wombat.glitch.me/";
-// const endPoint = "http://localhost:8080/";
+// const endPoint = "https://broken-tinted-wombat.glitch.me/";
+const endPoint = "http://localhost:8080/";
 const apikey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBleHdib2FpZW92cm94amtjenNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQ1MDEwNzgsImV4cCI6MjAxMDA3NzA3OH0.6BHSqoC3DM7BXM7_X4Syq5W3u_U5MKO7EPClIkefExs";
 
 export async function getData(param) {

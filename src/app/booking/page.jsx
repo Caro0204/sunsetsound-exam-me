@@ -14,8 +14,8 @@ function Booking() {
   const fee = [{ name: "Fixed booking fee", price: "99", id: 0, type: "fee", amount: 1 }];
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch("https://broken-tinted-wombat.glitch.me/available-spots")
-      // fetch("http://localhost:8080/available-spots")
+    // fetch("https://broken-tinted-wombat.glitch.me/available-spots")
+    fetch("http://localhost:8080/available-spots")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
