@@ -8,7 +8,7 @@ function Ordercomplete({ bookingId }) {
       <div className={styles.completeTitles}>
         <h2 className={styles.completeHeader}>ORDER COMPLETE!</h2>
         <p>Go check your email for a confirmation.</p>
-        <p> UR BOOKING ID IS: {bookingId}</p>
+        <p>You have got the following booking-ID: {bookingId}</p>
         <p>Return Home or check out the Lineup:</p>
       </div>
       <div className={styles.buttonWrapper}>
